@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="34dp"
+        android:padding="2dp"
+        android:scrollbars="vertical" >
+    </android.support.v7.widget.RecyclerView>
+    <!-- marginBottom 是为了下方Bar 会挡住GridView的最后一行 -->
+
+    <RelativeLayout
+        android:id="@+id/open_gallery_ll"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_gravity="bottom"
+        android:background="@color/bar_grey" >
+
+        <TextView
+            android:id="@+id/open_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="14dp"
+            android:textColor="@color/txt_black" />
+    </RelativeLayout>
+    
+    <ImageView android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="42dp"
+        android:visibility="gone"
+        android:background="#66000000"
+        />
+
+</FrameLayout>
